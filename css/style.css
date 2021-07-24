@@ -29,6 +29,7 @@ h6 {
     display: flex;
     justify-content: space-between;
     font-weight: 600;
+    padding: 40px;
 
 }
 
@@ -87,10 +88,13 @@ h6 {
 }
 
 .banner-text p {
-    font-size: 16px;
+    font-size: 18px;
+    width: 85%;
 }
 
-
+.button-area {
+    margin-top: 20px;
+}
 
 .btn {
     padding: 10px 20px;
@@ -99,11 +103,19 @@ h6 {
     border: none;
     font-size: 16px;
     color: #FFFF;
+    position: relative;
+
 
 }
 
-.banner-text .icon {
+
+.button-area .icon {
     color: #DF6951;
+    position: absolute;
+    left: 260px;
+    font-size: 45px;
+
+
 
 }
 
@@ -118,12 +130,24 @@ h6 {
 /* Category  */
 .category {
     text-align: center;
+    margin-top: 50px;
+}
+
+.category h5 {
+    color: #5E6282;
+    font-size: 18px;
+}
+
+.category h1 {
+
+    font-size: 50px;
 }
 
 .category-item {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 30px;
 
 }
 
@@ -146,15 +170,46 @@ h6 {
 /* Top selling Css */
 .top-selling-text {
     text-align: center;
+    padding-bottom: 30px;
+}
+
+.top-selling-text h5 {
+    color: #5E6282;
+    font-size: 18px;
+
+}
+
+.top-selling-text h1 {
+    font-size: 50px;
 }
 
 .top-selling-image {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    border-radius: 20px;
+}
+
+.images {
+    margin-left: 25px;
 }
 
 .images img {
-    width: 90%;
+    width: 95%;
+    border-radius: 20px;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+.destination-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+
+}
+
+.padding-lf {
+    padding-left: 25px;
 }
 
 /* brand Section */
@@ -162,12 +217,10 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 30px;
+    padding: 50px;
 }
 
 /* Subscribe-section  */
-
-.subscribe-section {}
 
 .subscribes {
     padding: 80px;
@@ -176,7 +229,7 @@ h6 {
     background: url(../assets/subscribe-decor-left.png), url(../assets/subscribe-decor-right.png);
     background-repeat: no-repeat;
     background-position: bottom left, top right;
-    background-color: #dfd7f9;
+    background-color: #DFD7F9;
 
     border-radius: 10px;
 
@@ -242,4 +295,14 @@ h6 {
 .copy-write {
     text-align: center;
     padding: 30px;
+}
+
+/* Media-quary start  */
+
+@media screen and (max-width:1201px) {
+    .container {
+        max-width: 80%;
+    }
+
+
 }
