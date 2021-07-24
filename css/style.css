@@ -64,6 +64,10 @@ h6 {
 
 }
 
+.menu-bar {
+    display: none;
+}
+
 /* Banner area statt  */
 .banner-section {
     display: flex;
@@ -144,10 +148,11 @@ h6 {
 }
 
 .category-item {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     margin: 30px;
+    grid-template-columns: repeat(4, 1fr);
 
 }
 
@@ -304,5 +309,132 @@ h6 {
         max-width: 80%;
     }
 
+    .nav-items {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 30px;
+    }
+
+    .banner-text h4 {
+        font-size: 18px;
+    }
+
+    .banner-text h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .banner-section {
+        flex-direction: column;
+    }
+
+    .banner-text {
+        width: 70%;
+    }
+
+    .images-ara {
+        width: 90%;
+    }
+
+
+
+    .banner-text h4 {
+        font-size: 20px;
+    }
+
+    .banner-text h1 {
+        font-size: 75px;
+    }
+
+    .button-area .icon {
+        left: 350px;
+    }
+
+    .banner-section {
+        flex-direction: column-reverse;
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+    .category-item {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .brand {
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width:645px) {
+    .top-selling-image {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .text-area {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .subscribes {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .category-item {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding-left: 90px;
+
+    }
+
+    .container {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .banner-text h1 {
+        font-size: 55px;
+    }
+
+    .top-selling-image {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .images img {
+        width: 80%;
+    }
+
+    .input-grop {
+        flex-direction: column;
+    }
+
+    .subscribes h2 {
+        width: 100%;
+    }
+
+    .text-area {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
 
 }
